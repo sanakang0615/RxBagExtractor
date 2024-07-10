@@ -21,8 +21,8 @@ pip install RxBagExtractor
 ### Optional Parameters
 
 -   `stopwords_customize`: 기본 불용어 리스트 외에 추가적으로 필터링하고 싶은 단어들을 문자열 리스트로 입력할 수 있습니다.
--   `patterns_exact_customize`: OCR 텍스트의 각 줄에서 정확히 매치되어야 할 정규 표현식을 포함하는 리스트. 각 항목은 `re.compile(r"정규표현식")` 형식으로 입력됩니다.
--   `patterns_include_customize`: OCR 텍스트의 각 줄에 이 정규표현식이 포함되어 있으면 해당 줄을 삭제합니다. `re.compile(r"정규표현식")` 형식으로 입력됩니다.
+-   `patterns_exact_customize`: OCR 텍스트의 각 줄에서 정확히 매치되어야 할 정규 표현식을 포함하는 리스트. 기본적으로 설정된 정규표현식 외에 추가적으로 필터링하고 싶은 정규표현식이 있을시 사용합니다. 각 항목은 `re.compile(r"정규표현식")` 형식으로 입력됩니다.
+-   `patterns_include_customize`: OCR 텍스트의 각 줄에 이 정규표현식이 포함되어 있으면 해당 줄을 삭제합니다. 기본적으로 설정된 정규표현식 외에 추가적으로 필터링하고 싶은 정규표현식이 있을시 사용합니다. `re.compile(r"정규표현식")` 형식으로 입력됩니다.
 
 ## Example
 ``` python
